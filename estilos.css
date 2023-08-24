@@ -9,3 +9,11 @@ h1{
     justify-content: space-between;
 }
 
+.manos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mano{
+    height: 150px;
+}
