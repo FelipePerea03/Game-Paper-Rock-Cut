@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +10,34 @@
     <link rel="stylesheet" href="modal.css">
 </head>
 <body>
-    <h1>Piedra-Papel-Tijera</h1>
-    <section class="Principal">
-        <div class="Puntajes">
-            <div class="puntaje-usuario">
-                <h2>Uuario</h2>
-                <p>0</p>
+    
+    <div class="container">
+        <header class="header">
+            <h1>Rock Paper Scissors</h1>
+            <buttton id="restart" class="restart-btn">Restart Game</buttton>
+            <div id="score" class="score">
+                <p>Player: 0</p>
+                <p>Computer: 0</p>
             </div>
+        </header>
+        <h2>Make Your Selection</h2>
+        <div class="choices">
+            
+            <i id="rock" class="choice fas fa-hand-rock fa-10X"></i>
+            <i id="paper" class="choice fas fa-hand-paper fa-10X"></i>
+            <i id="scissors" class="choice fas fa-hand-scissors fa-10X"></i>
+            
+        </div>
+    </div>
 
-            <div class="puntaje-usuario">
-                <h2>Computador</h2>
-                <p>0</p>
-            </div>
+    <!-- Modal -->
+    <div class="modal hidden">
+        <div id="result-modal-content">
+            <h1>You Win</h1>
+            <i class="fas fa-hand-rock fa-10x"></i>
+            <p>Computer chose Rock</p>
         </div>
-        <div class="tablero">
-            <div class="manos">
-                <img class="mano" src="./Recursos/piedra_ada.png" alt="">
-                <img class="mano" src="./Recursos/piedra_computadora.png" alt="">
-            </div>
-        </div>
-    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
